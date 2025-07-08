@@ -9,10 +9,10 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "issuer": "npx ts-node-dev src/IssuerInquirer.ts --inspect 9229",
+    "issuer": "npx --yes ts-node-dev src/IssuerInquirer.ts --inspect 9229",
     "provider": "tsx src/Provider.js",
-    "holder": "npx ts-node-dev src/HolderInquirer.ts --inspect 9229",
-    "verifier": "npx ts-node-dev src/VerifierInquirer.ts --inspect 9229",
+    "holder": "npx --yes ts-node-dev src/HolderInquirer.ts --inspect 9229",
+    "verifier": "npx --yes ts-node-dev src/VerifierInquirer.ts --inspect 9229",
     "proxies": "ngrok --config ngrok.yml,ngrok.auth.yml start provider issuer verifier"
   },
   "dependencies": {

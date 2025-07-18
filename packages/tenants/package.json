@@ -24,12 +24,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@credo-ts/core": "workspace:*",
-    "@credo-ts/didcomm": "workspace:*",
+    "@credo-ts/core": "*",
+    "@credo-ts/didcomm": "*",
     "async-mutex": "^0.4.0"
   },
   "devDependencies": {
-    "@credo-ts/node": "workspace:*",
+    "@credo-ts/node": "*",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^4.4.0",
     "typescript": "~5.5.2"

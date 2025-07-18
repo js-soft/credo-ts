@@ -24,10 +24,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@credo-ts/anoncreds": "workspace:*",
-    "@credo-ts/askar": "workspace:*",
-    "@credo-ts/core": "workspace:*",
-    "@credo-ts/node": "workspace:*"
+    "@credo-ts/anoncreds": "*",
+    "@credo-ts/askar": "*",
+    "@credo-ts/core": "*",
+    "@credo-ts/node": "*"
   },
   "devDependencies": {
     "@openwallet-foundation/askar-nodejs": "^0.3.1",

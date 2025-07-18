@@ -26,8 +26,8 @@
   "dependencies": {
     "@2060.io/ffi-napi": "^4.0.9",
     "@2060.io/ref-napi": "^3.0.6",
-    "@credo-ts/core": "workspace:*",
-    "@credo-ts/didcomm": "workspace:*",
+    "@credo-ts/core": "*",
+    "@credo-ts/didcomm": "*",
     "@types/express": "^4.17.21",
     "express": "^4.21.2",
     "rxjs": "^7.8.0",

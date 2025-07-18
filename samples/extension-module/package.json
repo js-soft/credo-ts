@@ -19,10 +19,10 @@
     "@types/ws": "^8.5.4"
   },
   "dependencies": {
-    "@credo-ts/core": "workspace:*",
-    "@credo-ts/didcomm": "workspace:*",
-    "@credo-ts/node": "workspace:*",
-    "@credo-ts/askar": "workspace:*",
+    "@credo-ts/core": "*",
+    "@credo-ts/didcomm": "*",
+    "@credo-ts/node": "*",
+    "@credo-ts/askar": "*",
     "class-validator": "0.14.1",
     "rxjs": "^7.8.0",
     "@openwallet-foundation/askar-nodejs": "^0.3.1"

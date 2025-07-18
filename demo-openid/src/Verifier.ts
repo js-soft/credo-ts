@@ -15,7 +15,11 @@ const universityDegreeDcql = {
   credential_sets: [
     {
       required: true,
-      options: [['UniversityDegreeCredential-vc+sd-jwt'], ['UniversityDegreeCredential-jwt_vc_json']],
+      options: [
+        ['UniversityDegreeCredential-vc+sd-jwt'],
+        ['UniversityDegreeCredential-jwt_vc_json-ld'],
+        ['UniversityDegreeCredential-jwt_vc_json'],
+      ],
     },
   ],
   credentials: [
@@ -27,6 +31,16 @@ const universityDegreeDcql = {
       },
     },
     {
+      id: 'UniversityDegreeCredential-jwt_vc_json-ld',
+      format: 'jwt_vc_json-ld',
+      claims: [
+        {
+          path: ['vc', 'type'],
+          values: ['UniversityDegree'],
+        },
+      ],
+    },
+    {
       id: 'UniversityDegreeCredential-jwt_vc_json',
       format: 'jwt_vc_json',
       claims: [
@@ -35,9 +49,6 @@ const universityDegreeDcql = {
           values: ['UniversityDegree'],
         },
       ],
-      meta: {
-        type_values: [['UniversityDegree']],
-      },
     },
   ],
 } satisfies DcqlQuery
@@ -46,7 +57,11 @@ const openBadgeCredentialDcql = {
   credential_sets: [
     {
       required: true,
-      options: [['OpenBadgeCredential-vc+sd-jwt'], ['OpenBadgeCredential-jwt_vc_json']],
+      options: [
+        ['OpenBadgeCredential-vc+sd-jwt'],
+        ['OpenBadgeCredential-jwt_vc_json-ld'],
+        ['OpenBadgeCredential-jwt_vc_json'],
+      ],
     },
   ],
   credentials: [
@@ -58,11 +73,24 @@ const openBadgeCredentialDcql = {
       },
     },
     {
+      id: 'OpenBadgeCredential-jwt_vc_json-ld',
+      format: 'jwt_vc_json-ld',
+      claims: [
+        {
+          path: ['vc', 'type'],
+          values: ['OpenBadgeCredential'],
+        },
+      ],
+    },
+    {
       id: 'OpenBadgeCredential-jwt_vc_json',
       format: 'jwt_vc_json',
-      meta: {
-        type_values: [['OpenBadgeCredential']],
-      },
+      claims: [
+        {
+          path: ['vc', 'type'],
+          values: ['OpenBadgeCredential'],
+        },
+      ],
     },
   ],
 } satisfies DcqlQuery

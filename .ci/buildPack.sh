@@ -2,7 +2,8 @@
 
 set -e
 
-npm version $VERSION --no-git-tag-version
+corepack enable
+pnpm version $VERSION --no-git-tag-version
 pnpm ci
 pnpm build
 pnpm pack -r
